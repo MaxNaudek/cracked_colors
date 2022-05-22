@@ -1,0 +1,17 @@
+/* body {
+    width: 100%;
+    height: 100%;
+} */
+
+.titulo {
+    display: inline-block;
+    cursor: pointer;
+}
+.subtitulo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
