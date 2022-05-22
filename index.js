@@ -14,10 +14,10 @@ function getRandomNumber() {
     return Math.floor(Math.random() * colorArray.length);
 }
 
-fondo.addEventListener("click", function () {
-    const randomNumberBackground = getRandomNumber();
-   fondo.style.backgroundColor = colorArray[randomNumberBackground];
-});
+// fondo.addEventListener("click", function () {
+//     const randomNumberBackground = getRandomNumber();
+//    fondo.style.backgroundColor = colorArray[randomNumberBackground];
+// });
 
 titulo.addEventListener("click", function () {
     const randomNumberTitulo = getRandomNumber();
@@ -29,16 +29,16 @@ subtitulo.addEventListener("click", function () {
     subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
 });
 
-// boton.addEventListener("click", function () {
-//     const randomNumberTitulo = getRandomNumber();
-//     const randomNumberSubtitulo = getRandomNumber();
-//     const randomNumberBackground = getRandomNumber();
+boton.addEventListener("click", function () {
+    const randomNumberTitulo = getRandomNumber();
+    const randomNumberSubtitulo = getRandomNumber();
+    const randomNumberBackground = getRandomNumber();
 
-//     // boton.style.background = randomNumber
-//     titulo.style.backgroundColor = colorArray[randomNumberTitulo];
-//     subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
-//     fondo.style.backgroundColor = colorArray[randomNumberBackground];
+    // boton.style.background = randomNumber
+    titulo.style.backgroundColor = colorArray[randomNumberTitulo];
+    subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
+    fondo.style.backgroundColor = colorArray[randomNumberBackground];
 
 
-//     // colorArray.textContent = colorArray[randomNumber];
-// });
+    // colorArray.textContent = colorArray[randomNumber];
+});
