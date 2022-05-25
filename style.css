@@ -1,17 +1,161 @@
-/* body {
-    width: 100%;
-    height: 100%;
-} */
-
-.titulo {
-    display: inline-block;
-    cursor: pointer;
+html {
+  box-sizing: border-box;
+  height: 100%;
 }
-.subtitulo {
-    display: inline-block;
-    cursor: pointer;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100%;
 }
 
-button {
-    cursor: pointer;
+.navbar{
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 4rem;
+  font-family: "Helvetica Ne";
+  display:flex;
+  align-items: flex-end;
+  grid-area: navbar;
+  background-color:rgb(106, 177, 177)
+  transition-property: background-color;
+  transition-duration: .75s
 }
+.properties{
+  grid-area: properties;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  background-color:rgb(137, 249, 162);
+  transition-property: background-color;
+  transition-duration: .75s
+}
+
+.button{
+  cursor: pointer;
+  grid-area: button;
+  font-size: 30px;
+  background-color:rgb(218, 50, 48);
+  border-radius:50%;
+  transition-property: background-color;
+  transition-duration: .75s
+}
+
+  /* height:10rem;
+  width:10rem; */
+  /* background-color:rgb(176, 236, 236); */
+  .stars {
+    grid-area: stars;
+      background: red;
+      width: 8rem;
+      height: 8rem;
+      position: relative;
+      text-align: center;
+    }
+    .stars:before,
+    .stars:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8rem;
+      width: 8rem;
+      background: red;
+    }
+    .stars:before {
+      transform: rotate(30deg);
+    }
+    .stars:after {
+      transform: rotate(60deg);
+    }
+
+
+  /* background-color:rgb(215, 236, 176); */
+  .stars1{
+
+    width: 8rem;
+  height: 8rem;
+  background: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: .75s
+   }
+
+
+.stars2 {
+   grid-area: stars2;
+   background: red;
+   width: 8rem;
+   height: 8rem;
+   position: relative;
+   text-align: center;
+   transform: rotate(20deg);
+ }
+.stars2:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 8rem;
+   width: 8rem;
+   background: red;
+   transform: rotate(135deg);
+     }
+
+
+.stars3{
+  grid-area: stars3;
+  cursor: pointer;
+  border: 1px solid black;
+   display: block;
+   width: 126px;
+   height: 180px;
+   background-color: red;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   transition-property: background-color;
+   transition-duration: .75s
+
+}
+
+
+.stars4{
+  cursor: pointer;
+  border: 1px solid black;
+  grid-area: stars4;
+  width: 200px;
+  height: 100px;
+  background: red;
+  border-radius: 100px / 50px;
+  transition-property: background-color;
+  transition-duration: .75s
+}
+
+
+.footer{
+  grid-area: footer;
+    cursor: pointer;
+    border: 2px solid black;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+     background-color: rgb(236, 191, 176);
+    transition-property: background-color;
+    transition-duration: .75s;
+}
+
+#contenedor-fondo {
+    display: grid;
+    gap: 5px ;
+    border: 5px solid black;
+    grid-template-rows: 9rem 10rem  10rem 150px 10rem;
+    grid-template-columns:12rem 10rem 10rem 150px 10rem 10rem 10rem;
+    grid-template-areas:
+    "navbar navbar navbar  navbar  navbar  navbar   navbar       navbar"
+    " .      .     stars3     .     .        .    properties    properties"
+    " .  stars   .     .   button     .       .              ."
+    " .      .       .      stars1  .        .      stars2          ."
+    " footer footer footer    .     .        .       .           stars4"
+
+  }
