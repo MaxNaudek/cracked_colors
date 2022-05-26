@@ -70,6 +70,7 @@ p {
 
 .figure {
     grid-area: figure;
+    cursor: pointer;
     width: 300px;
     height: 300px;
     border: 2px solid black;
@@ -80,7 +81,8 @@ p {
 }
 
 .figure1{
-  grid-area: figure1;
+    grid-area: figure1;
+    cursor: pointer;
     width: 8rem;
     height: 8rem;
     margin-top: 1rem;
@@ -94,6 +96,7 @@ p {
 
 .figure2 {
     grid-area: figure2;
+    cursor: pointer;
     background: red;
     border: 2px solid black;
     width: 100px;
