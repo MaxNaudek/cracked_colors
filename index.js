@@ -3,6 +3,7 @@ const titulo = document.querySelector(".navbar")
 const subtitulo = document.querySelector(".properties")
 const boton = document.querySelector(".button");
 const footer = document.querySelector(".footer");
+const stars = document.querySelector(".stars");
 const stars1 = document.querySelector(".stars1");
 const stars2 = document.querySelector(".stars2");
 const stars3 = document.querySelector(".stars3");
@@ -41,7 +42,6 @@ subtitulo.addEventListener("click", function () {
     const randomNumberSubtitulo = getRandomNumber();
     subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
     hexProperties.textContent = colorArray[randomNumberSubtitulo];
-
 });
 
 footer.addEventListener("click", function () {
@@ -49,6 +49,12 @@ footer.addEventListener("click", function () {
     const randomNumberFooter = getRandomNumber();
     footer.style.backgroundColor = colorArray[randomNumberFooter];
     hexFooter.textContent = colorArray[randomNumberFooter]
+});
+
+stars.addEventListener("click", function () {
+    event.stopPropagation()
+    const randomNumberStars = getRandomNumber();
+    stars.style.backgroundColor = colorArray[randomNumberStars];
 });
 
 stars1.addEventListener("click", function () {
@@ -80,6 +86,7 @@ boton.addEventListener("click", function () {
     const randomNumberSubtitulo = getRandomNumber();
     const randomNumberBackground = getRandomNumber();
     const randomNumberFooter = getRandomNumber();
+    const randomNumberStars= getRandomNumber();
     const randomNumberStars1= getRandomNumber();
     const randomNumberStars2= getRandomNumber();
     const randomNumberStars3= getRandomNumber();
@@ -89,9 +96,13 @@ boton.addEventListener("click", function () {
     subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
     fondo.style.backgroundColor = colorArray[randomNumberBackground];
     footer.style.backgroundColor = colorArray[randomNumberFooter];
+    stars.style.backgroundColor = colorArray[randomNumberStars];
     stars1.style.backgroundColor = colorArray[randomNumberStars1];
     stars2.style.backgroundColor = colorArray[randomNumberStars2];
     stars3.style.backgroundColor = colorArray[randomNumberStars3];
     stars4.style.backgroundColor = colorArray[randomNumberStars4];
     // colorArray.textContent = colorArray[randomNumber];
+    hexNavbar.textContent = colorArray[randomNumberTitulo];
+    hexProperties.textContent = colorArray[randomNumberSubtitulo];
+    hexFooter.textContent = colorArray[randomNumberFooter]
 });
