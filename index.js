@@ -1,7 +1,7 @@
-const fondo = document.querySelector("#contenedor-fondo")
-const titulo = document.querySelector(".navbar")
-const subtitulo = document.querySelector(".properties")
-const boton = document.querySelector(".button");
+const font = document.querySelector("#container-font")
+const navbar = document.querySelector(".navbar")
+const properties = document.querySelector(".properties")
+const button = document.querySelector(".button");
 const footer = document.querySelector(".footer");
 const figure = document.querySelector(".figure");
 const figure1 = document.querySelector(".figure1");
@@ -18,25 +18,25 @@ function getRandomNumber() {
     return Math.floor(Math.random() * colorArray.length);
 }
 
-fondo.addEventListener("click", function () {
+font.addEventListener("click", function () {
 
     const randomNumberBackground = getRandomNumber();
-   fondo.style.backgroundColor = colorArray[randomNumberBackground];
+   font.style.backgroundColor = colorArray[randomNumberBackground];
 });
 
-titulo.addEventListener("click", function () {
+navbar.addEventListener("click", function () {
     event.stopPropagation()
-    const randomNumberTitulo = getRandomNumber();
-    titulo.style.backgroundColor = colorArray[randomNumberTitulo];
-    hexNavbar.textContent = colorArray[randomNumberTitulo];
+    const randomNumberNavbar = getRandomNumber();
+    navbar.style.backgroundColor = colorArray[randomNumberNavbar];
+    hexNavbar.textContent = colorArray[randomNumberNavbar];
 });
 
 
-subtitulo.addEventListener("click", function () {
+properties.addEventListener("click", function () {
     event.stopPropagation()
-    const randomNumberSubtitulo = getRandomNumber();
-    subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
-    hexProperties.textContent = colorArray[randomNumberSubtitulo];
+    const randomNumberProperties = getRandomNumber();
+    properties.style.backgroundColor = colorArray[randomNumberProperties];
+    hexProperties.textContent = colorArray[randomNumberProperties];
 });
 
 footer.addEventListener("click", function () {
@@ -76,10 +76,10 @@ figure4.addEventListener("click", function () {
     figure4.style.backgroundColor = colorArray[randomNumberFigure4];
 });
 
-boton.addEventListener("click", function () {
+button.addEventListener("click", function () {
     event.stopPropagation()
-    const randomNumberTitulo = getRandomNumber();
-    const randomNumberSubtitulo = getRandomNumber();
+    const randomNumberNavbar = getRandomNumber();
+    const randomNumberProperties = getRandomNumber();
     const randomNumberBackground = getRandomNumber();
     const randomNumberFooter = getRandomNumber();
     const randomNumberFigure= getRandomNumber();
@@ -88,9 +88,9 @@ boton.addEventListener("click", function () {
     const randomNumberFigure3= getRandomNumber();
     const randomNumberFigure4= getRandomNumber();
 
-    titulo.style.backgroundColor = colorArray[randomNumberTitulo];
-    subtitulo.style.backgroundColor = colorArray[randomNumberSubtitulo];
-    fondo.style.backgroundColor = colorArray[randomNumberBackground];
+    navbar.style.backgroundColor = colorArray[randomNumberNavbar];
+    properties.style.backgroundColor = colorArray[randomNumberProperties];
+    font.style.backgroundColor = colorArray[randomNumberBackground];
     footer.style.backgroundColor = colorArray[randomNumberFooter];
     figure.style.backgroundColor = colorArray[randomNumberFigure];
     figure1.style.backgroundColor = colorArray[randomNumberFigure1];
@@ -98,7 +98,7 @@ boton.addEventListener("click", function () {
     figure3.style.backgroundColor = colorArray[randomNumberFigure3];
     figure4.style.backgroundColor = colorArray[randomNumberFigure4];
 
-    hexNavbar.textContent = colorArray[randomNumberTitulo];
-    hexProperties.textContent = colorArray[randomNumberSubtitulo];
+    hexNavbar.textContent = colorArray[randomNumberNavbar];
+    hexProperties.textContent = colorArray[randomNumberProperties];
     hexFooter.textContent = colorArray[randomNumberFooter]
 });
