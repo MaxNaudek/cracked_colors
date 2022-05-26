@@ -17,6 +17,7 @@ body {
 }
 
 .navbar{
+    grid-area: navbar;
     display: inline-block;
     border: 2px solid black;
     cursor: pointer;
@@ -26,7 +27,6 @@ body {
     font-weight: bold;
     display:flex;
     align-items: flex-end;
-    grid-area: navbar;
     background-color:rgb(106, 177, 177);
     transition-property: background-color;
     transition-duration: .75s;
@@ -54,8 +54,8 @@ p {
 }
 
 .button{
-    cursor: pointer;
     grid-area: button;
+    cursor: pointer;
     font-family: 'Poiret One';
     font-size: 20px;
     font-weight: bold;
@@ -69,17 +69,18 @@ p {
 }
 
 .figure {
+    grid-area: figure;
     width: 300px;
     height: 300px;
     border: 2px solid black;
     background: red;
     transform: rotate(45deg);
-    grid-area: figure;
     transition-property: background-color;
     transition-duration: .75s
 }
 
 .figure1{
+  grid-area: figure1;
     width: 8rem;
     height: 8rem;
     margin-top: 1rem;
@@ -117,9 +118,9 @@ p {
 }
 
 .figure4 {
+    grid-area: figure4;
     cursor: pointer;
     border: 2px solid black;
-    grid-area: figure4;
     width: 200px;
     height: 100px;
     background: red;
@@ -146,14 +147,12 @@ p {
 
 #container-font {
     display: grid;
-    /* gap: 5px ; */
-    /* border: 5px solid black; */
-    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: 10% repeat(4, 22.5%);
+    grid-template-columns: repeat(8, 12.5%);
     grid-template-areas:
         "navbar navbar navbar  navbar  navbar  navbar   navbar navbar"
-        " .      .     .     figure3     .        .    properties    properties"
+        " figure1     .     .     figure3     .        .    properties    properties"
         " .      .   .     .   button     .       .              ."
-        " .      figure       .      figure1  .        .      .          figure2"
+        " .      figure       .      .  .        .      .          figure2"
         " footer footer footer    .     .        figure4       .           ."
 }
