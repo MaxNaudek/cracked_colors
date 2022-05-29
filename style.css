@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 html {
-    box-sizing: border-box;
-    height: 100%;
     font-family: 'Poiret One';
     font-weight: bold;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 body {
-    min-height: 100%;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .navbar{
