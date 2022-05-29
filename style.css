@@ -39,7 +39,7 @@ body {
     font-family: 'Poiret One';
     padding-left: 1rem;
     padding-top: 1rem;
-    font-size: 19px;
+    font-size: 1.1875em;
     font-weight: bold;
     margin-top: 1rem;
     display: inline-block;
@@ -59,7 +59,7 @@ p {
     font-family: 'Poiret One';
     font-size: 20px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875em;
     background-color:rgb(218, 50, 48);
     border-radius:50%;
     transition-property: background-color;
