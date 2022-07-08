@@ -19,7 +19,7 @@ body {
 .navbar{
     grid-area: navbar;
     display: inline-block;
-    border: .13vw solid black;
+    border: .14vw solid black;
     height:10vh;
     width: 200%;
     cursor: pointer;
